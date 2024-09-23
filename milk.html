@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condensed Milk</title>
+
+    <style>
+        /* Base styles */
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(243, 212, 212);
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            margin-right: 250px;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 30%;
+            color: black;
+            display: block;
+        }
+
+        .text {
+            text-align: center;
+        }
+
+        button {
+            border-radius: 30%;
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        .image img,
+        marquee img {
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 1px solid black;
+        }
+
+        .image img:hover,
+        marquee img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        @media only screen and (max-width: 425px) {
+    header {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        padding: 8px 10px;
+        font-size: 14px;
+        border-radius: 20%;
+    }
+
+    .text h2 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .image img {
+        width: 80%;
+        height: auto;
+    }
+
+    .marquee img {
+        width: 100px;
+        height: auto;
+    }
+
+    .text p {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+}
+
+        /* (small devices) */
+        @media only screen and (max-width: 480px) {
+            header {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                background-color: rgb(243, 212, 212);
+                width: 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .text h2 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+
+            .marquee img {
+                width: 150px;
+                height: auto;
+            }
+        }
+
+        /* (from tabs) */
+        @media only screen and (max-width: 768px) {
+            header {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                background-color: rgb(243, 212, 212);
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            nav ul li a {
+                padding: 8px 12px;
+                font-size: 1rem;
+            }
+
+            .text h2 {
+                font-size: 1.0rem;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 15px;
+            }
+
+            .marquee img {
+                width: 200px;
+                height: auto;
+            }
+        }
+
+        /* (from laptops) */
+        @media only screen and (min-width: 769px) {
+            nav ul {
+                justify-content: flex-start;
+                margin-left: 300px;
+            }
+
+            nav ul li {
+                margin-left: 20px;
+            }
+
+            .image img {
+                max-width: 500px;
+            }
+
+            .text h2 {
+                font-size: 2rem;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            .marquee img {
+                width: 250px;
+                height: auto;
+            }
+
+            p {
+                font-style: italic;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./MILKYMIST.html">HOME</a></li>
+                <li><a href="./MILKYMIST.html">ABOUT</a></li>
+                <li><a href="./MILKYMIST.html">PRODUCTS</a></li>
+                <li><a href="./MILKYMIST.html">VIDEOS</a></li>
+                <li><a href="./MILKYMIST.html">MAP</a></li>
+                <li><a href="./MILKYMIST.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+    <center>
+        <div class="image">
+            <img src="milk.png" alt="Sweetened Condensed Milk">
+        </div>
+        <div class="text">
+            <h2>Sweetened Condensed Milk</h2>
+            <p>Versatile and long-lasting, our condensed milk adds magic to your kitchen adventures,
+                making every bite an unforgettable experience.
+                ​Embrace the sweet sensation today!</p>
+            <h4>Available in</h4>
+            <button>200 g</button>
+            <button>400 g</button>
+        </div>
+
+        <h2>Gallery</h2>
+        <hr>
+    </center><br>
+
+    <marquee>
+        <img src="milk1.png" alt="Milk Product 1">
+        <img src="milk2.png" alt="Milk Product 2">
+        <img src="milk3.png" alt="Milk Product 3">
+        <img src="milk4.png" alt="Milk Product 4">
+        <img src="milk5.png" alt="Milk Product 5">
+        <img src="milk6.png" alt="Milk Product 6">
+        <img src="milk7.png" alt="Milk Product 7">
+    </marquee>
+
+</body>
+
+</html>

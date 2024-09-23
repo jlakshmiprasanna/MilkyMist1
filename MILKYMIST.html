@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MILKYMIST</title>
+    <link rel="stylesheet" href="./MILKYMIST.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="MMlogo.png" alt="Logo">
+        <nav class="navbar">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="#Home" style="margin: 30px;">HOME</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">ABOUT</button>
+                    <div class="dropdown-content">
+                        <li><a href="./icecream.html">Ice cream</a></li>
+                        <li><a href="./milk.html">Milk</a></li>
+                        <li><a href="./uht.html">UHT</a></li>
+                        <li><a href="./food.html">Food Enhancer</a></li>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PRODUCTS</button>
+                    <div class="dropdown-content">
+                        <li><a href="./paneer.html">Paneer</a></li>
+                        <li><a href="./butter.html">Butter</a></li>
+                        <li><a href="#">Cheese</a></li>
+                        <li><a href="#">Curd</a></li>
+                        <li><a href="#">Desserts</a></li>
+                        <li><a href="#">Frozen pizza</a></li>
+                        <li><a href="#">Ghee</a></li>
+                        <li><a href="#">Capella Chocolate</a></li>
+                        <li><a href="#">Icecream</a></li>
+                        <li><a href="#">Smart chef</a></li>
+                        <li><a href="#">Ready To Drink</a></li>
+                        <li><a href="#">Fruit Yogurt</a></li>
+                    </div>
+                </div>
+                <li><a href="#Videos">VIDEOS</a></li>
+                <li><a href="#Map">MAP</a></li>
+                <li><a href="#Contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header><br>
+
+
+    <section id="Home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="MMproducts.jpg" height="500px" width="100%">
+                <div class="text">Products</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="Screenshot 2024-08-23 220554.png" height="500px" width="100%">
+                <div class="text">Capella Chocolate</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="Screenshot 2024-08-23 220621.png" height="500px" width="100%">
+                <div class="text">Pizza</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="Screenshot 2024-08-23 220651.png" height="500px" width="100%">
+                <div class="text">Butter</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="Screenshot 2024-09-05 171014.png" height="500px" width="100%">
+                <div class="text">Kulfi</div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+    </section>
+
+    <h2>ABOUT</h2>
+    <section id="About">
+        <div class="Milkymist">
+            <p><i>
+                    Milky Mist Dairy Food Private Limited is a name you will often hear when you talk about the best
+                    dairy brand in Tamil Nadu & other Southern states
+                    of India. We are based at Chittode near Erode, Tamil Nadu & our premium quality dairy products have
+                    helped us spread our name throughout the nation.
+                    Our products have set a benchmark in the dairy industry, making us the top brand in India for dairy
+                    products. A few factors that set us apart from others are:
+                    Premium Quality (which is maintained throughout our product ranges)
+                    1. World-Class Packaging
+                    2. Consumer Reach Throughout India
+                    Our journey began as the best paneer brand & then we became a 100% product company and the only
+                    dairy in India to convert all the milk procured into value-added products.
+                    <a href="https://en.wikipedia.org/wiki/Milky_Mist_Dairy">readmore</i></a>
+            </p>
+        </div>
+    </section>
+
+
+    <section id="Menu">
+        <div class="type1"><img src="capella bar.png" height="350px" width="350px"></div>
+        <div class="type"><img src="milkshakes.png" height="400px" width="350px"></div>
+        <div class="type4"><img src="dairy.png" height="400px" width="350px"></div>
+        <div class="type2"><img src="milk2.png" height="400px" width="350px"></div>
+    </section>
+
+    <section id="Products">
+        <h2><b>PRODUCTS</b></h2><br>
+    </section>
+
+
+    <form action="order.html">
+        <section id="items">
+            <div class="card">
+                <img src="Paneer.jpg" height="300px" width="320px">
+                <p class="price">$75.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="Butter.jpg" height="300px" width="320px">
+                <p class="price">$90.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="Cheese.jpg" height="300px" width="320px">
+                <p class="price">$80.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="Curd.jpg" height="300px" width="320px">
+                <p class="price">$50.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="Desserts.jpg" height="300px" width="320px">
+                <p class="price">$100.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="Frozen pizza.jpg" height="300px" width="320px">
+                <p class="price">$150.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="Ghee.jpg" height="300px" width="320px">
+                <p class="price">$50.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="Chocolate.jpg" height="300px" width="320px">
+                <p class="price">$200.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="icecream.jpg.png" height="300px" width="320px">
+                <p class="price">$150.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="pizza.jpg.png" height="300px" width="320px">
+                <p class="price">$120.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="drink.jpg.png" height="300px" width="320px">
+                <p class="price">$50.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="fruit.png" height="300px" width="320px">
+                <p class="price">$95.00</p>
+                <p><button>Add to cart</button></p>
+            </div>
+        </section><br><br>
+    </form>
+
+
+    <h2>VIDEOS</h2>
+    <section id="Videos">
+        <h2>move right for more....</h2>
+        <div id="move">
+            <!-- <marquee> -->
+                <center>
+            <div class="slide">
+                <video src="video2.mp4" controls width="480px" height="500px"></video>
+                <video src="video1.mp" controls width="480px" height="385px"></video>
+                <video src="video3.mp4" controls width="480px" height="500px"></video>
+            </div>
+        </center>
+            <!-- </marquee> -->
+        </div>
+    </section><br>
+
+
+    <h2>MAP</h2><br>
+    <section id="Map">
+        <div class="Map">
+            <a
+                href="https://www.google.com/maps/place/Milky+mist+dairy+products/@15.4161373,75.259965,6z/data=!4m6!3m5!1s0x3a3459f6afde02d7:0xa5c4e17efb5d0d9f!8m2!3d17.2613382!4d80.1581579!16s%2Fg%2F11n10j37ps?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D">
+                <img src="MMmap.png" height="500px" width="500px"> </a>
+        </div>
+    </section><br>
+
+    <form action="./prasanna.txt">
+        <h2>CONTACT</h2><br>
+        <section id="Contact">
+
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </section><br>
+    </form><br>
+
+
+    <footer>
+        <h3>
+            <p>&copy; 2023 Milkymist_advertisement.All rights reserved.</p>
+        </h3>
+        <div class="icon">
+            <a href="https://www.facebook.com/milkymistdairy/">
+                <i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/milkymistdairy/">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.youtube.com/c/milkymistindia">
+                <i class="fa-brands fa-youtube"></i></a>
+            <a href="https://twitter.com/MilkyMistIndia?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                <i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </footer>
+    </main>
+</body>
+
+</html>

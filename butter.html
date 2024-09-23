@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butter</title>
+
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ul,
+        li,
+        button {
+            margin: 0;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: rgb(243, 212, 212);
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            border: 2px solid black;
+            background-color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 15px;
+            color: black;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: lightgrey;
+            transform: scale(1.05);
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .items img {
+            width: 100%;
+            height: auto;
+            max-height: 520px;
+            object-fit: cover;
+            transition: opacity 0.5s ease;
+        }
+
+        .items img:hover {
+            opacity: 0.8;
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            position: relative;
+        }
+
+        .item img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .item img:hover {
+            transform: scale(1.05);
+        }
+
+        .text {
+            text-align: center;
+            font-size: larger;
+            transition: font-size 0.3s ease;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .items img {
+                max-height: 300px;
+            }
+
+            .item img {
+                max-width: 90%;
+            }
+
+            button {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .product {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .text {
+                font-size: medium;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .items img {
+                max-height: 400px;
+            }
+
+            .product {
+                margin: 10px;
+            }
+
+            .item img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./MILKYMIST.html">HOME</a></li>
+                <li><a href="./MILKYMIST.html">ABOUT</a></li>
+                <li><a href="./MILKYMIST.html">PRODUCTS</a></li>
+                <li><a href="./MILKYMIST.html">VIDEOS</a></li>
+                <li><a href="./MILKYMIST.html">MAP</a></li>
+                <li><a href="./MILKYMIST.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>BUTTER</h1>
+    <div class="items">
+        <img src="butters.png">
+    </div><br>
+
+    <div class="item">
+        <img src="cooking butter.png">
+    </div>
+    <div class="text1">
+        <h2>FRESH PANEER</h2>
+        <p>Milky Mist offers freshly made paneer from pure
+            milk in a hygienically packed multilayer thermoforming packaging.<br> You can use it without any worries.
+        </p>
+        <h4>Available in</h4>
+        <button>200g</button>
+        <button>500g</button>
+        <button>1kg</button>
+    </div>
+
+    <div class="item">
+        <img src="table butter.png">
+    </div>
+    <div class="text2">
+        <h2>FROZEN PANEER CUBES</h2>
+        <p>
+            Looking for paneer with extended shelf life?
+            Milky Mist also offers refrigerated paneer cubes that stay intact <br>for longer periods.</p>
+        <h4>Available in</h4>
+        <button>200g</button>
+        <button>500g</button>
+    </div>
+
+    <div class="item">
+        <img src="butter chiplet.png">
+    </div>
+    <div class="text3">
+        <h2>TOFU PANEER</h2>
+        <p>Want to get some vegan protein? Briyas Premium
+            Tofu Paneer is made just for you. It has a delicious taste with irresistible
+            soy protein. Try it today!</p>
+        <h4>Available in</h4>
+        <button>200g</button>
+        <button>500g</button>
+        <button>1kg</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icecream</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            background-color: rgb(243, 212, 212);
+        }
+
+        nav ul {
+            display: flex;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            border: 5px;
+            background-color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 30%;
+            color: black;
+        }
+
+        img {
+            height: 350px;
+            width: 500px;
+            display: block;
+            margin: 0 auto;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+            border-radius: 50%;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            border: 2px solid black;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6,
+        .item7,
+        .item8 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .text1,
+        .text2,
+        .text3,
+        .text4,
+        .text5,
+        .text6,
+        .text7,
+        .text8 {
+            text-align: center;
+            font-size: larger;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1rem;
+        }
+
+        @media only screen and (max-width: 425px) {
+    header {
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        padding: 8px;
+        font-size: 0.9rem;
+        border-radius: 15%;
+    }
+
+    img {
+        height: 180px;
+        width: 250px;
+    }
+
+    .text1,
+    .text2,
+    .text3,
+    .text4,
+    .text5,
+    .text6,
+    .text7,
+    .text8 {
+        font-size: small;
+    }
+
+    button {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+
+        @media only screen and (max-width: 480px) {
+            header {
+                justify-content: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            nav ul li a {
+                padding: 8px;
+                font-size: 1rem;
+            }
+
+            img {
+                height: 200px;
+                width: 250px;
+            }
+
+            .text1,
+            .text2,
+            .text3,
+            .text4,
+            .text5,
+            .text6,
+            .text7,
+            .text8 {
+                font-size: smaller;
+            }
+
+            button {
+                padding: 5px;
+                font-size: 0.8rem;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            header {
+                justify-content: center;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            nav ul li a {
+                padding: 10px;
+                font-size: 1.2rem;
+            }
+
+            img {
+                height: 250px;
+                width: 300px;
+            }
+
+            .text1,
+            .text2,
+            .text3,
+            .text4,
+            .text5,
+            .text6,
+            .text7,
+            .text8 {
+                font-size: small;
+            }
+
+            button {
+                padding: 8px;
+                font-size: 1rem;
+            }
+        }
+
+        @media only screen and (max-width: 1024px) {
+            nav ul {
+                margin-left: 150px;
+            }
+
+            nav ul li a {
+                font-size: 1rem;
+                padding: 8px;
+            }
+
+            img {
+                height: 300px;
+                width: 400px;
+            }
+
+            .text1,
+            .text2,
+            .text3,
+            .text4,
+            .text5,
+            .text6,
+            .text7,
+            .text8 {
+                font-size: medium;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./MILKYMIST.html">HOME</a></li>
+                <li><a href="./MILKYMIST.html">ABOUT</a></li>
+                <li><a href="./MILKYMIST.html">PRODUCTS</a></li>
+                <li><a href="./MILKYMIST.html">VIDEOS</a></li>
+                <li><a href="./MILKYMIST.html">MAP</a></li>
+                <li><a href="./MILKYMIST.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="item1">
+        <img src="capella cone.png" alt="Capella Cone">
+        <div class="text1">
+            <h1>Capella Cone</h1>
+            <p>Introducing the Cone Capella - a scrumptious cone ice cream available in a variety of flavors. Enjoy the
+                perfect blend of crispy and crunchy textures with a creamy, delectable filling. Happy munching!</p>
+            <h4>Available in</h4>
+            <button>60ml</button>
+        </div>
+    </div>
+
+    <div class="item2">
+        <img src="capella bar.png" alt="Capella Bar">
+        <div class="text2">
+            <h1>Capella Bar</h1>
+            <p>Satisfy your cravings on the go with our Capella bar - a satisfying blend of creamy ice cream filling and
+                a crispy, outer layer.</p>
+            <h4>Available in</h4>
+            <button>60ml/80ml</button>
+        </div>
+    </div>
+
+    <div class="item3">
+        <img src="capella duet.png" alt="Capella Duet">
+        <div class="text3">
+            <h1>Capella Duet</h1>
+            <p>Satisfy your cravings on the go with our Capella Sticks - a satisfying blend of creamy ice cream filling
+                and a crispy, chocolatey outer layer.</p>
+            <h4>Available in</h4>
+            <button>80ml</button>
+        </div>
+    </div>
+
+    <div class="item4">
+        <img src="ice candy.png" alt="Ice Candy">
+        <div class="text4">
+            <h1>Ice Cream</h1>
+            <p>Treat yourself to a taste of nostalgia with our timeless ice candy variants, guaranteed to evoke memories
+                of those carefree summer days. Indulge in pure bliss!</p>
+            <h4>Available in</h4>
+            <button>60ml</button>
+        </div>
+    </div>
+
+    <div class="item5">
+        <img src="kulfi.png" alt="Kulfi">
+        <div class="text5">
+            <h1>Kulfi</h1>
+            <p>Experience the richness of authentic flavors with our premium classic delight kulfis, a cherished delight
+                for all occasions known for their smooth texture and unparalleled taste</p>
+            <h4>Available in</h4>
+            <button>60ml</button>
+        </div>
+    </div>
+
+    <div class="item6">
+        <img src="sundae cup.png" alt="Sundae Cup">
+        <div class="text6">
+            <h1>Sundae Cup</h1>
+            <p>Treat yourself to the ultimate refreshment with our Sundae ice creams. Experience the fruity bliss of
+                Strawberry Ripple, the tangy delight of Black Currant Ripple, and the tropical sensation of Mango
+                Ripple—ideal to unwind your busy days.</p>
+            <h4>Available in</h4>
+            <button>125ml</button>
+        </div>
+    </div>
+
+    <div class="item7">
+        <img src="family treats.png" alt="Family Treats">
+        <div class="text7">
+            <h1>Family Treats</h1>
+            <p>Experience the delectable flavors of Oval Tub ice cream, featuring French vanilla, Italian chocolate,
+                prime strawberry, and creamy butterscotch - a treat that will tantalize your taste buds.</p>
+            <h4>Available in</h4>
+            <button>1ltr</button>
+        </div>
+    </div>
+
+    <div class="item8">
+        <img src="family tree caramel.png" alt="Family Tree Caramel">
+        <div class="text8">
+            <h1>Family Tree</h1>
+            <p>Indulge in Milky Mist's irresistible desserts: Tiramisu Caramel Treat with rich coffee and caramel
+                drizzle, and Vanilla Magic Treat with creamy vanilla bean essence. Enjoy the perfect balance of creamy
+                textures and exquisite flavors!</p>
+            <h4>Available in</h4>
+            <button>1ltr</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Enhancer</title>
+
+    <style>
+        /* Base Styles */
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: rgb(243, 212, 212);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30%;
+            color: black;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: rgb(223, 192, 192);
+        }
+
+        /* Product Section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product h1 {
+            font-size: 1.5em;
+            margin: 15px 0 10px;
+        }
+
+        .product p {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        .product h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .product button {
+            background-color: rgb(243, 212, 212);
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+            border: 1px solid black;
+        }
+
+        .product button:hover {
+            background-color: rgb(223, 192, 192);
+        }
+
+        /* Media Queries */
+
+        /* Large Tablets and Small Desktops */
+        @media (max-width: 1200px) {
+            .product {
+                width: 45%;
+            }
+        }
+
+        /* Tablets */
+        @media (max-width: 992px) {
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            nav ul li {
+                margin: 5px;
+            }
+
+            .product {
+                width: 45%;
+            }
+        }
+
+        /* Mobile Phones */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .product {
+                width: 80%;
+            }
+        }
+
+        /* Small Mobile Phones */
+        @media (max-width: 576px) {
+            .product h1 {
+                font-size: 1.2em;
+            }
+
+            .product p {
+                font-size: 0.9em;
+            }
+
+            .product button {
+                font-size: 0.9em;
+                padding: 8px 12px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./MILKYMIST.html">HOME</a></li>
+                <li><a href="./MILKYMIST.html">ABOUT</a></li>
+                <li><a href="./MILKYMIST.html">PRODUCTS</a></li>
+                <li><a href="./MILKYMIST.html">VIDEOS</a></li>
+                <li><a href="./MILKYMIST.html">MAP</a></li>
+                <li><a href="./MILKYMIST.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="products">
+        <div class="product">
+            <img src="dairy.png" alt="Dairy Whitener">
+            <h1>Dairy Whitener</h1>
+            <p>Milky Mist’s Dairy Whitener is the perfect product for your everyday dairy needs. Mix it with your tea or coffee to get that smooth milk powder taste & texture.</p>
+            <h2>Available in</h2>
+            <button>200g</button>
+            <button>500g</button>
+        </div>
+
+        <div class="product">
+            <img src="powder.png" alt="Skimmed Milk Powder">
+            <h1>Skimmed Milk Powder</h1>
+            <p>Milky Mist’s Skimmed Milk Powder is the perfect low-fat & high protein everyday milk powder for you. This dry milk powder will make all your recipes super delicious.</p>
+            <h2>Available in</h2>
+            <button>1kg</button>
+        </div>
+
+        <div class="product">
+            <img src="khova.png" alt="Khova">
+            <h1>Khova</h1>
+            <p>While trying your favourite Indian sweet dishes, Milky Mist Khova is a must-have ingredient. It makes the best Indian desserts even better.</p>
+            <h2>Available in</h2>
+            <button>1kg</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paneer Products</title>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-start;
+            background-color: rgb(243, 212, 212);
+            padding: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin-left: auto;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            background-color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 30%;
+            color: black;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .items img {
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .product img {
+            max-width: 40%;
+            border-radius: 10px;
+        }
+
+        .product-text {
+            max-width: 50%;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .product-text h2 {
+            margin: 0 0 10px 0;
+        }
+
+        .product-text p {
+            margin: 10px 0;
+        }
+
+        .product-text button {
+            padding: 10px 20px;
+            background-color: lightgray;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .product-text button:hover {
+            background-color: gray;
+            transform: scale(1.1);
+        }
+
+        @media (max-width: 1200px) {
+            nav ul {
+                margin-left: 0;
+            }
+
+            .product {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .product img {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            .product-text {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            .items img {
+                height: 400px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+
+            .items img {
+                height: 300px;
+            }
+
+            button {
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./MILKYMIST.html">HOME</a></li>
+                <li><a href="./MILKYMIST.html">ABOUT</a></li>
+                <li><a href="./MILKYMIST.html">PRODUCTS</a></li>
+                <li><a href="./MILKYMIST.html">VIDEOS</a></li>
+                <li><a href="./MILKYMIST.html">MAP</a></li>
+                <li><a href="./MILKYMIST.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>PANEER PRODUCTS</h1>
+
+    <div class="items">
+        <img src="paneer.png" alt="Paneer">
+    </div>
+
+    <section class="product">
+        <img src="fresh paneer.png" alt="Fresh Paneer">
+        <div class="product-text">
+            <h2>FRESH PANEER</h2>
+            <p>Milky Mist offers freshly made paneer from pure milk in a hygienically packed multilayer thermoforming packaging. You can use it without any worries.</p>
+            <h4>Available in</h4>
+            <button>200g</button>
+            <button>500g</button>
+            <button>1kg</button>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="frozen paneer.png" alt="Frozen Paneer Cubes" style="width: 400px; height: 400px;">
+        <div class="product-text">
+            <h2>FROZEN PANEER CUBES</h2>
+            <p>Looking for paneer with extended shelf life? Milky Mist also offers refrigerated paneer cubes that stay intact for longer periods.</p>
+            <h4>Available in</h4>
+            <button>200g</button>
+            <button>500g</button>
+        </div>
+    </section>
+
+    <section class="product">
+        <img src="tofu paneer.png" alt="Tofu Paneer">
+        <div class="product-text">
+            <h2>TOFU PANEER</h2>
+            <p>Want to get some vegan protein? Briyas Premium Tofu Paneer is made just for you. It has a delicious taste with irresistible soy protein. Try it today!</p>
+            <h4>Available in</h4>
+            <button>200g</button>
+            <button>500g</button>
+            <button>1kg</button>
+        </div>
+    </section>
+</body>
+
+</html>

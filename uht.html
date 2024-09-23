@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHT</title>
+
+    <style>
+        body {
+            background-color: antiquewhite;
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(243, 212, 212);
+            padding: 10px 0;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            background-color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 30%;
+            color: black;
+            margin-left: 5px;
+        }
+
+        .item1 img,
+        .item2 img,
+        .item3 img,
+        .item4 img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .item1 img:hover,
+        .item2 img:hover,
+        .item3 img:hover,
+        .item4 img:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .text1,
+        .text2,
+        .text3,
+        .text4 {
+            text-align: center;
+            margin: 20px 5%;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            border-radius: 30%;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        /* Media Queries */
+        @media (max-width: 1000px) {
+            nav ul {
+                flex-wrap: wrap;
+            }
+
+            .item1,
+            .item2,
+            .item3,
+            .item4 {
+                margin: 40px auto;
+            }
+
+            .text1,
+            .text2,
+            .text3,
+            .text4 {
+                margin: 40px 10%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: block;
+                text-align: center;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            .item1,
+            .item2,
+            .item3,
+            .item4 {
+                margin-bottom: 40px;
+            }
+
+            .text1,
+            .text2,
+            .text3,
+            .text4 {
+                margin: 0 5%;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            .text1,
+            .text2,
+            .text3,
+            .text4 h1 {
+                font-size: 1.2em;
+            }
+
+            .text1,
+            .text2,
+            .text3,
+            .text4 p {
+                font-size: 0.9em;
+            }
+
+            nav ul {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./MILKYMIST.html">HOME</a></li>
+                <li><a href="./MILKYMIST.html">ABOUT</a></li>
+                <li><a href="./MILKYMIST.html">PRODUCTS</a></li>
+                <li><a href="./MILKYMIST.html">VIDEOS</a></li>
+                <li><a href="./MILKYMIST.html">MAP</a></li>
+                <li><a href="./MILKYMIST.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header><br>
+
+    <div class="item1">
+        <img src="buttermilk.png" alt="Buttermilk">
+    </div>
+    <div class="text1">
+        <h1>Milk Cream</h1>
+        <p>UHT Buttermilk
+            Make Milky Mist Butter Milk your go-to drink for anytime & anywhere refreshment. This low-fat beverage
+            is best to keep your health in check. It comes with an amazing spiced flavour & a longer shelf life.</p>
+        <h4>Available in</h4>
+        <button>200ml</button>
+        <button>1ltr</button>
+    </div>
+
+    <div class="item2">
+        <img src="milkshakes.png" alt="Milkshakes">
+    </div>
+    <div class="text2">
+        <h1>MilkShakes</h1>
+        <p>Want the best milkshake without any mess? Milky Mist Milkshakes are made just for you. It is the perfect
+            blend
+            of milk protein & fresh nutrients, along with flavours that you will enjoy. Choose from variants like
+            Vanilla,
+            Strawberry & Chocolate.</p>
+        <h4>Available in</h4>
+        <button>220ml</button>
+        <button>1ltr</button>
+    </div>
+
+    <div class="item3">
+        <img src="cream.png" alt="Cream">
+    </div>
+    <div class="text3">
+        <h1>Cream</h1>
+        <p>From soups to desserts, you can make your recipes interesting by adding fresh cream to it.
+            Milky Mist Milk Cream is packed under highly hygienic conditions & it delivers a consistent and smooth
+            texture to all your dishes.</p>
+        <h4>Available in</h4>
+        <button>200ml</button>
+    </div>
+
+    <div class="item4">
+        <img src="lassi.png" alt="Lassi">
+    </div>
+    <div class="text4">
+        <h1>Lassi</h1>
+        <p>Now satisfy your flavoured lassi cravings anytime & anywhere with Milky Mist UHT Lassi.
+            It is safe, hygienic & has a long shelf life. You can enjoy it in variants like Natural, Green Apple,
+            Blueberry & Mango.</p>
+        <h4>Available in</h4>
+        <button>200ml</button>
+    </div>
+
+</body>
+
+</html>
